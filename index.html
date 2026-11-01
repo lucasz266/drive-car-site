@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drive Car Mecânica em Santa Maria/RS: troca de óleo, freios, ar-condicionado, diagnóstico eletrônico e revisão. Peça seu orçamento online.">
+  <meta name="theme-color" content="#000000">
+  <title>Drive Car Mecânica | Santa Maria - RS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ==========================================================
+       CABEÇALHO
+       ========================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Drive Car Mecânica, voltar ao início">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 5 8h14l2 5.5V19h-2v-2H5v2H3z"/><path d="M5 13.5h14M7 8l1.2-3h7.6L17 8"/></svg>
+        </span>
+        <span class="brand__text"><strong>DRIVE CAR</strong><small>MECÂNICA</small></span>
+      </a>
+
+      <div class="nav__dropdown" id="servicesDropdown">
+        <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="servicesMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          Todos os serviços
+        </button>
+        <ul class="nav__dropdown-menu" id="servicesMenu"></ul>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#contato">Contato</a>
+        <span class="nav__sep" aria-hidden="true"></span>
+        <a class="btn btn--red btn--sm" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__chevron" aria-hidden="true"></div>
+      <div class="hero__visual" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1600&q=85" alt="">
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Mecânica automotiva · Santa Maria / RS</p>
+          <h1 class="hero__title">
+            <span class="hero__title-red">Troca de óleo</span>
+            <span class="hero__title-white">Pacotes de manutenção</span>
+          </h1>
+          <p class="hero__lead">Consulte o pacote ideal para o seu veículo e receba o orçamento antes de qualquer serviço.</p>
+          <div class="hero__actions">
+            <a class="btn btn--red" href="#orcamento">Solicitar orçamento →</a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+          <ul class="hero__chips">
+            <li class="chip">Orçamento antes do serviço</li>
+            <li class="chip">Atendimento direto</li>
+            <li class="chip">Santa Maria · RS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SERVIÇOS EM DESTAQUE
+         Os cards são gerados a partir de js/config.js
+         ========================================================== -->
+    <section class="section deals" id="servicos">
+      <div class="container">
+        <div class="deals__frame reveal">
+          <div class="bar">
+            <h2 class="bar__title">Serviços em destaque</h2>
+            <div class="countdown" id="countdown" hidden>
+              <span class="countdown__label">Termina em</span>
+              <strong data-unit="d">00</strong><span>d</span>
+              <strong data-unit="h">00</strong><span>h</span>
+              <strong data-unit="m">00</strong><span>m</span>
+              <strong data-unit="s">00</strong><span>s</span>
+            </div>
+            <a class="btn btn--red btn--sm" href="#catalogo">Ver todos</a>
+          </div>
+          <div class="deal-grid" id="dealGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         BANNERS PROMOCIONAIS
+         ========================================================== -->
+    <section class="section promos" aria-label="Destaques">
+      <div class="container promo-grid">
+        <article class="promo reveal" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80')">
+          <div class="promo__body">
+            <p class="promo__eyebrow">Freios</p>
+            <h3 class="promo__title">Pastilhas e discos</h3>
+            <button class="promo__link" type="button" data-service="freios">Solicitar orçamento ›</button>
+          </div>
+        </article>
+        <article class="promo reveal delay-1" style="background-image:url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=900&q=80')">
+          <div class="promo__body">
+            <p class="promo__eyebrow">Conforto</p>
+            <h3 class="promo__title">Higienização do ar-condicionado</h3>
+            <button class="promo__link" type="button" data-service="arcondicionado">Solicitar orçamento ›</button>
+          </div>
+        </article>
+        <article class="promo reveal delay-2" style="background-image:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80')">
+          <div class="promo__body">
+            <p class="promo__eyebrow">Diagnóstico</p>
+            <h3 class="promo__title">Scanner automotivo</h3>
+            <button class="promo__link" type="button" data-service="diagnostico">Solicitar orçamento ›</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CATÁLOGO: lista lateral + cards
+         ========================================================== -->
+    <section class="section catalog" id="catalogo">
+      <div class="container catalog__frame reveal">
+        <aside class="catalog__side">
+          <h2 class="catalog__title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>
+            Serviços
+          </h2>
+          <ul class="catalog__list" id="catalogList"></ul>
+          <a class="btn btn--outline btn--block catalog__cta" href="#orcamento">Solicitar orçamento →</a>
+        </aside>
+        <div class="catalog__cards" id="catalogCards"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         COMO FUNCIONA
+         ========================================================== -->
+    <section class="section steps-section" aria-label="Como funciona">
+      <div class="container steps-box reveal">
+        <div class="step-item">
+          <span class="step-item__num">1</span>
+          <div><h3>Conte o problema</h3><p>Escolha o veículo e os serviços desejados.</p></div>
+        </div>
+        <div class="step-item">
+          <span class="step-item__num">2</span>
+          <div><h3>Veja a estimativa</h3><p>Acompanhe o valor de referência na hora.</p></div>
+        </div>
+        <div class="step-item">
+          <span class="step-item__num">3</span>
+          <div><h3>Agende o atendimento</h3><p>A equipe confirma o orçamento final pelo WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SOBRE
+         ========================================================== -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="about__photo">
+            <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1100&q=85" alt="Ilustração de manutenção automotiva em oficina" loading="lazy">
+          </div>
+          <div class="about__stamp">
+            <strong>4,9★</strong>
+            <span>Avaliação pública no Google</span>
+          </div>
+        </div>
+
+        <div class="about__copy reveal" style="--delay:.1s">
+          <span class="eyebrow">Sobre a Drive Car</span>
+          <h2>Cuidado que vai além da <span>mecânica.</span></h2>
+          <p>A Drive Car Mecânica atende em Santa Maria, no bairro Nonoai, com serviços de manutenção e reparação automotiva. A proposta é oferecer um atendimento atencioso, com clareza para o cliente entender o que o veículo precisa.</p>
+          <p>As avaliações públicas destacam a transparência nas explicações, a atenção da equipe e a confiança durante o atendimento.</p>
+          <ul class="checks">
+            <li>Orientação clara</li>
+            <li>Atendimento próximo</li>
+            <li>Manutenção automotiva</li>
+            <li>Contato facilitado</li>
+          </ul>
+          <a class="text-link" href="#orcamento">Peça seu orçamento →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         ORÇAMENTO ONLINE
+         Lógica em js/budget.js — preços em js/config.js
+         ========================================================== -->
+    <section class="section budget" id="orcamento">
+      <div class="container">
+        <header class="budget__head reveal">
+          <span class="eyebrow">Orçamento online</span>
+          <h2>Peça seu <span>orçamento</span></h2>
+          <p>Escolha o tipo do veículo e os serviços. A estimativa aparece na hora, e você pode enviar a solicitação pelo WhatsApp.</p>
+        </header>
+
+        <form class="budget__layout reveal" id="budgetForm" novalidate>
+          <div class="budget__form">
+
+            <fieldset class="block">
+              <legend><span class="step-no">1</span>Seus dados</legend>
+              <div class="fields">
+                <div class="field">
+                  <label for="bName">Nome *</label>
+                  <input id="bName" type="text" autocomplete="name" placeholder="Como podemos chamar você?">
+                  <small class="field-error" data-error-for="bName"></small>
+                </div>
+                <div class="field">
+                  <label for="bPhone">Celular com WhatsApp *</label>
+                  <input id="bPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 90000-0000">
+                  <small class="field-error" data-error-for="bPhone"></small>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="block">
+              <legend><span class="step-no">2</span>Seu veículo</legend>
+              <div class="options options--vehicle" id="vehicleOptions"></div>
+              <div class="field">
+                <label for="bVehicle">Modelo e ano (opcional)</label>
+                <input id="bVehicle" type="text" placeholder="Ex.: Gol 2015">
+              </div>
+            </fieldset>
+
+            <fieldset class="block">
+              <legend><span class="step-no">3</span>Serviços desejados *</legend>
+              <div class="options options--services" id="serviceOptions"></div>
+              <small class="field-error" data-error-for="services"></small>
+            </fieldset>
+
+            <div class="field">
+              <label for="bNote">Observações (opcional)</label>
+              <textarea id="bNote" placeholder="Sintomas, barulhos, luzes no painel..."></textarea>
+            </div>
+          </div>
+
+          <aside class="summary" aria-labelledby="summaryTitle">
+            <h3 id="summaryTitle">Resumo do orçamento</h3>
+            <p class="summary__vehicle" id="summaryVehicle"></p>
+            <ul class="summary__list" id="summaryList" aria-live="polite"></ul>
+            <div class="summary__total">
+              <span>Estimativa</span>
+              <strong id="summaryTotal">R$ 0,00</strong>
+            </div>
+            <p class="summary__note">Valor de referência. O orçamento final é confirmado pela equipe após a avaliação do veículo.</p>
+            <button class="btn btn--red btn--block" type="submit">Enviar pelo WhatsApp →</button>
+            <button class="link-reset" type="button" id="clearBudget">Limpar seleção</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </aside>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CONTATO
+         ========================================================== -->
+    <section class="section contact" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__copy reveal">
+          <span class="eyebrow">Fale conosco</span>
+          <h2>Vamos cuidar do seu <span>veículo?</span></h2>
+          <p>Tire dúvidas, consulte disponibilidade ou converse sobre o serviço que seu carro precisa.</p>
+
+          <ul class="contact__list">
+            <li class="contact__row">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.7L7.1 10.3a16 16 0 0 0 6.6 6.6l1.9-1.9a2 2 0 0 1 1.7-.6l3 .5a2 2 0 0 1 1.7 2Z"/></svg>
+              </span>
+              <div><strong>WhatsApp</strong><a data-wa href="#" target="_blank" rel="noopener" data-text="whatsapp"></a></div>
+            </li>
+            <li class="contact__row">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div><strong>Endereço</strong><span data-text="address"></span></div>
+            </li>
+            <li class="contact__row">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div><strong>Horários</strong><span>Consulte a disponibilidade pelo WhatsApp.</span></div>
+            </li>
+          </ul>
+
+          <div class="social">
+            <a href="#" data-link="facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.4v2.2H7v3.2h2.8V21h3.6Z"/></svg>
+              Facebook
+            </a>
+            <a href="#" data-link="instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+              Instagram
+            </a>
+          </div>
+
+          <a class="text-link" href="#" data-link="maps" target="_blank" rel="noopener">Como chegar →</a>
+        </div>
+
+        <div class="map reveal delay-1">
+          <iframe title="Localização da Drive Car Mecânica no mapa" data-link="maps-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================
+       RODAPÉ
+       ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 5 8h14l2 5.5V19h-2v-2H5v2H3z"/><path d="M5 13.5h14M7 8l1.2-3h7.6L17 8"/></svg>
+        </span>
+        <span class="brand__text"><strong>DRIVE CAR</strong><small>MECÂNICA • SANTA MARIA / RS</small></span>
+      </a>
+      <p>© <span id="currentYear"></span> Drive Car Mecânica. Todos os direitos reservados.</p>
+      <div class="footer__links">
+        <a href="#inicio">Topo ↑</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Falar com a Drive Car pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C8.86 3 3.02 8.82 3.02 15.98c0 2.28.6 4.5 1.75 6.45L3 29l6.75-1.76a13.1 13.1 0 0 0 6.28 1.6h.01c7.17 0 13.01-5.82 13.02-12.98A12.9 12.9 0 0 0 25.24 6.6 12.9 12.9 0 0 0 16.04 3Zm0 23.65h-.01c-1.96 0-3.88-.52-5.55-1.5l-.4-.24-4.01 1.05 1.07-3.9-.26-.41a10.78 10.78 0 0 1-1.66-5.67c0-5.96 4.86-10.8 10.83-10.8a10.75 10.75 0 0 1 7.66 3.17 10.72 10.72 0 0 1 3.16 7.65c-.01 5.96-4.87 10.8-10.83 10.8Zm5.94-8.1c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.84 1.05-1.03 1.26-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.84-1.59-1.88-1.78-2.2-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.55-.73-.56h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.33c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.52-.08-.14-.3-.22-.62-.38Z"/></svg>
+  </a>
+
+  <!-- Scripts: configuração primeiro, depois a lógica -->
+  <script src="js/config.js"></script>
+  <script src="js/budget.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
